@@ -1,1 +1,1 @@
-slug
+dull
