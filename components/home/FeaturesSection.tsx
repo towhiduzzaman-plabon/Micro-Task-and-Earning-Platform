@@ -5,32 +5,32 @@ import { motion } from 'framer-motion'
 
 const features = [
   {
-    icon: <FaShieldAlt className="text-4xl text-black" />,
+    icon: <FaShieldAlt className="text-4xl" />,
     title: 'Secure Platform',
     description: 'Your data and payments are protected with industry-standard security measures.',
   },
   {
-    icon: <FaClock className="text-4xl text-black" />,
+    icon: <FaClock className="text-4xl" />,
     title: 'Quick Payments',
     description: 'Get paid fast with our streamlined payment processing system.',
   },
   {
-    icon: <FaDollarSign className="text-4xl text-black" />,
+    icon: <FaDollarSign className="text-4xl" />,
     title: 'Fair Pricing',
     description: 'Competitive rates for workers and affordable prices for buyers.',
   },
   {
-    icon: <FaUsers className="text-4xl text-black" />,
+    icon: <FaUsers className="text-4xl" />,
     title: 'Verified Workers',
     description: 'All workers are verified to ensure quality and reliability.',
   },
   {
-    icon: <FaCheckCircle className="text-4xl text-black" />,
+    icon: <FaCheckCircle className="text-4xl" />,
     title: 'Quality Assurance',
     description: 'Every task is reviewed to ensure it meets the highest standards.',
   },
   {
-    icon: <FaHeadset className="text-4xl text-black" />,
+    icon: <FaHeadset className="text-4xl" />,
     title: '24/7 Support',
     description: 'Our support team is always ready to help you with any questions.',
   },
@@ -52,7 +52,7 @@ export default function FeaturesSection() {
               className="bg-white rounded-lg p-6 text-center hover:shadow-lg transition"
             >
               <div className="text-primary-600 mb-4 flex justify-center">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <h3 className="text-xl font-semibold text-black mb-2">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
             </motion.div>
           ))}
