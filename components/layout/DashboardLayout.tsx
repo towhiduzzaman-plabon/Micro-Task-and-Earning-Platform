@@ -33,6 +33,8 @@ const navigation: NavItem[] = [
   { name: 'Withdraw Requests', href: '/dashboard/withdraw-requests', icon: <FaCoins />, roles: ['admin'] },
 ]
 
+import FirebaseBanner from './FirebaseBanner'
+
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const { user, userData, loading } = useAuth()
   const pathname = usePathname()
@@ -129,6 +131,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <FirebaseBanner />
       {/* Mobile Header */}
       <div className="bg-white shadow-md lg:hidden">
         <div className="flex items-center justify-between p-4">

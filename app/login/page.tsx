@@ -35,7 +35,8 @@ export default function LoginPage() {
 
     try {
       if (!auth) {
-        alert('Firebase is not initialized. Please check your configuration.')
+        toast.error('Firebase is not initialized. Please check your configuration.')
+        setLoading(false)
         return
       }
       const userCredential = await signInWithEmailAndPassword(
@@ -69,7 +70,8 @@ export default function LoginPage() {
     setLoading(true)
     try {
       if (!auth) {
-        alert('Firebase is not initialized. Please check your configuration.')
+        toast.error('Firebase is not initialized. Please check your configuration.')
+        setLoading(false)
         return
       }
       const provider = new GoogleAuthProvider()

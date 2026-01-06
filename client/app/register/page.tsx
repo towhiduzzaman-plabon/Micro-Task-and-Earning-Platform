@@ -73,7 +73,8 @@ export default function RegisterPage() {
     try {
       // Create Firebase user
       if (!auth) {
-        alert('Firebase is not initialized. Please check your configuration.')
+        toast.error('Firebase is not initialized. Please check your configuration.')
+        setLoading(false)
         return
       }
       const userCredential = await createUserWithEmailAndPassword(
@@ -133,7 +134,8 @@ export default function RegisterPage() {
     setLoading(true)
     try {
       if (!auth) {
-        alert('Firebase is not initialized. Please check your configuration.')
+        toast.error('Firebase is not initialized. Please check your configuration.')
+        setLoading(false)
         return
       }
       const provider = new GoogleAuthProvider()

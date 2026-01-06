@@ -9,6 +9,8 @@ import { useRouter } from 'next/navigation'
 import { FaUser, FaSignOutAlt, FaCoins } from 'react-icons/fa'
 import Logo from './Logo'
 
+import FirebaseBanner from './FirebaseBanner'
+
 export default function Navbar() {
   const { user, userData } = useAuth()
   const router = useRouter()
@@ -27,9 +29,11 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <div>
+      <FirebaseBanner />
+      <nav className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
               <Logo />
@@ -131,6 +135,7 @@ export default function Navbar() {
         </div>
       )}
     </nav>
+  </div>
   )
 }
 
