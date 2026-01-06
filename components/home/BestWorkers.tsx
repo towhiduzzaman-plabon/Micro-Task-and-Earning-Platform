@@ -26,7 +26,7 @@ export default function BestWorkers() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">Top Workers</h2>
+        <h2 className="text-3xl text-black font-bold text-center mb-12">Top Workers</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {workers.length === 0 ? (
             <div className="col-span-full text-center text-gray-500">No workers yet</div>
@@ -34,7 +34,7 @@ export default function BestWorkers() {
             workers.map((worker) => (
               <div
                 key={worker._id}
-                className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition"
+                className="bg-white rounded-lg text-black shadow-md p-6 text-center hover:shadow-lg transition"
               >
                 <div className="mb-4">
                   {worker.photoURL ? (

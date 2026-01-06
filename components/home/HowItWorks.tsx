@@ -5,22 +5,22 @@ import { motion } from 'framer-motion'
 
 const steps = [
   {
-    icon: <FaUserPlus className="text-4xl" />,
+    icon: <FaUserPlus className="text-4xl text-black" />,
     title: 'Sign Up',
     description: 'Create your account as a worker or buyer in just a few minutes.',
   },
   {
-    icon: <FaTasks className="text-4xl" />,
+    icon: <FaTasks className="text-4xl text-black" />,
     title: 'Browse Tasks',
     description: 'Workers can browse available tasks, buyers can post new tasks.',
   },
   {
-    icon: <FaCheckCircle className="text-4xl" />,
+    icon: <FaCheckCircle className="text-4xl text-black" />,
     title: 'Complete & Review',
     description: 'Workers complete tasks, buyers review and approve submissions.',
   },
   {
-    icon: <FaCoins className="text-4xl" />,
+    icon: <FaCoins className="text-4xl text-black" />,
     title: 'Get Paid',
     description: 'Workers earn coins and can withdraw, buyers get tasks done.',
   },
@@ -30,7 +30,7 @@ export default function HowItWorks() {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
+        <h2 className="text-3xl font-bold text-black text-center mb-12">How It Works</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <motion.div

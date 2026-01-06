@@ -5,32 +5,32 @@ import { motion } from 'framer-motion'
 
 const features = [
   {
-    icon: <FaShieldAlt className="text-4xl" />,
+    icon: <FaShieldAlt className="text-4xl text-blue-700" />,
     title: 'Secure Platform',
     description: 'Your data and payments are protected with industry-standard security measures.',
   },
   {
-    icon: <FaClock className="text-4xl" />,
+    icon: <FaClock className="text-4xl text-blue-700" />,
     title: 'Quick Payments',
     description: 'Get paid fast with our streamlined payment processing system.',
   },
   {
-    icon: <FaDollarSign className="text-4xl" />,
+    icon: <FaDollarSign className="text-4xl text-blue-700" />,
     title: 'Fair Pricing',
     description: 'Competitive rates for workers and affordable prices for buyers.',
   },
   {
-    icon: <FaUsers className="text-4xl" />,
+    icon: <FaUsers className="text-4xl text-blue-700" />,
     title: 'Verified Workers',
     description: 'All workers are verified to ensure quality and reliability.',
   },
   {
-    icon: <FaCheckCircle className="text-4xl" />,
+    icon: <FaCheckCircle className="text-4xl text-blue-700" />,
     title: 'Quality Assurance',
     description: 'Every task is reviewed to ensure it meets the highest standards.',
   },
   {
-    icon: <FaHeadset className="text-4xl" />,
+    icon: <FaHeadset className="text-4xl text-blue-700" />,
     title: '24/7 Support',
     description: 'Our support team is always ready to help you with any questions.',
   },
@@ -40,7 +40,7 @@ export default function FeaturesSection() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12">Why Choose MicroTask?</h2>
+        <h2 className="text-3xl font-bold text-black text-center mb-12">Why Choose MicroTask?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <motion.div
