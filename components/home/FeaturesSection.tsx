@@ -5,32 +5,32 @@ import { motion } from 'framer-motion'
 
 const features = [
   {
-    icon: <FaShieldAlt className="text-4xl text-blue-700" />,
+    icon: <FaShieldAlt className="text-4xl text-black-700" />,
     title: 'Secure Platform',
     description: 'Your data and payments are protected with industry-standard security measures.',
   },
   {
-    icon: <FaClock className="text-4xl text-blue-700" />,
+    icon: <FaClock className="text-4xl text-black-700" />,
     title: 'Quick Payments',
     description: 'Get paid fast with our streamlined payment processing system.',
   },
   {
-    icon: <FaDollarSign className="text-4xl text-blue-700" />,
+    icon: <FaDollarSign className="text-4xl text-black-700" />,
     title: 'Fair Pricing',
     description: 'Competitive rates for workers and affordable prices for buyers.',
   },
   {
-    icon: <FaUsers className="text-4xl text-blue-700" />,
+    icon: <FaUsers className="text-4xl text-black-700" />,
     title: 'Verified Workers',
     description: 'All workers are verified to ensure quality and reliability.',
   },
   {
-    icon: <FaCheckCircle className="text-4xl text-blue-700" />,
+    icon: <FaCheckCircle className="text-4xl text-black-700" />,
     title: 'Quality Assurance',
     description: 'Every task is reviewed to ensure it meets the highest standards.',
   },
   {
-    icon: <FaHeadset className="text-4xl text-blue-700" />,
+    icon: <FaHeadset className="text-4xl text-black-700" />,
     title: '24/7 Support',
     description: 'Our support team is always ready to help you with any questions.',
   },
